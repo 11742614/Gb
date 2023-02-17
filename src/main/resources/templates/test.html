@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<script type="text/javascript" src="jquery-1.12.4.min_v2018.js"></script>
+
+	<body>
+
+		<div id="">
+			"Chnls":
+		</div>
+		<div id="">
+			SearchScope:
+			<select id="SearchScope">
+				<option value="DOCTITLE">标题</option>
+				<option value="DOCCONTENT">正文</option>
+				<option value="docor">全文</option>
+			</select>
+		</div>
+		<div>
+
+			TimeScope:
+			<select id="TimeScope">
+				<option value="day">7天</option>
+				<option value "week">一周</option>
+				<option value="year">一年</option>
+			</select>
+
+		</div>
+		<div id="">
+			SortOrder:
+			<select id="SortOrder">
+				<option value="-DOCRELTIME">时间正序</option>
+				<option value "+DOCRELTIME">时间倒序</option>
+				<option value="+RELEVANCE">相关度</option>
+			</select>
+
+		</div>
+		<div>
+			"检索词":<input id="SearchWord" type="text" />
+		</div>
+		<div id="">
+
+			"页数":<input id="PageSize" type="text" />
+		</div>
+
+		<input type="button" onclick="clickinput()" />
+		<div id="test" style="width: auto;"></div>
+		<script type="text/javascript">
+			function clickinput() {
+
+				var Chnls = 0;
+				var SearchScope = $("#searchScope").val();
+				var TimeScope = $("#TimeScope").val();
+				var SortOrder = $("#SortOrder").val();
+				var SearchWord = $("#SearchWord").val();
+				var PageSize = $("#PageSize").val();
+
+				alert(SearchScope + ":" + TimeScope + ":" + SortOrder + ":" + SearchWord + ":" + PageSize);
+				//alert("aa");
+				$.ajax({
+					url: "http://localhost:8080/qwjs",
+					data: {
+
+						"Chnls": Chnls,
+						"SearchScope": SearchScope,
+						"TimeScope": TimeScope,
+						"SortOrder": SortOrder,
+						"SearchWord": SearchWord,
+						"PageSize": PageSize
+					},
+					success: function(re) {
+						var t="";
+						var j = JSON.parse(re);
+						console.log(j.length);
+						
+						for(var i = 0; i < j.length; i++) {
+							console.log(j[i]);
+							t +=
+							"<div>"+j[i]["chnls"] + "</div>";
+							
+						}
+
+						$("#test").html(t)
+					},
+					error: function() {
+						alert("error");
+
+					}
+				});
+
+			}
+		</script>
+
+	</body>
+
+</html>

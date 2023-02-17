@@ -1,0 +1,35 @@
+#开发环境配置
+server:
+  profiles: dev
+  port: 8080
+spring:
+  application:
+    name: Gb-Search
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:mysql://10.10.200.105:3306/log?characterEncoding=UTF-8
+    username: log
+    password: log@gb
+    driver-class-name: com.mysql.cj.jdbc.Driver
+logging:
+  config: classpath:logback.xml
+
+---
+
+#生产环境配置
+#server:
+#  profiles: pro
+#  port: 8080
+#spring:
+#  profiles:
+#    active: pro
+#  datasource:
+#    url: jdbc:mysql://10.10.200.105:3306/log?characterEncoding=UTF-8
+#    username: log
+#    password: log@gb
+#    driver-class-name: com.mysql.jdbc.Driver
+#logging:
+#  config: classpath:logbacks.xml
+
+

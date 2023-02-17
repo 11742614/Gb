@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trshybase-mapping xmlns="http://www.huisituo.com/dms/trshybase-mapping"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.huisituo.com/dms/trshybase-mapping trshybase-mapping.xsd ">
+    <class id="guobo.All" name="com.trs.gb.bean.QwjsBean" table="guobo7">
+        <property name="chnls" column="chnls"/>
+        <property name="classification" column="classification"/>
+        <property name="DOCTITLE" column="DOCTITLE" color="true">
+            <extractor type="com.trs.gb.tools.HybaseColorStringExtractor"/>
+        </property>
+        <property name="DOCCONTENT" column="DOCCONTENT" color="true">
+            <extractor type="com.trs.gb.tools.HybaseColorStringExtractor"/>
+        </property>
+        <property name="DOCRELTIME" column="DOCRELTIME"/>
+        <property name="DOCPUBURL" column="DOCPUBURL"/>
+        <property name="slt" column="slt"/>
+        <property name="gg" column="gg"/>
+        <property name="nd" column="nd"/>
+        <property name="DOCHTMLCON" column="DOCHTMLCON"/>
+        <property name="issue" column="issue"/>
+        <property name="rcontent" column="rcontent"/>
+        <property name="rtime" column="rtime"/>
+        <property name="issue_name" column="issue_name"/>
+        <property name="ctime" column="ctime"/>
+        <property name="ztzlurl" column="ztzlurl"/>
+    </class>
+
+    <class id="jsonBen.All" name="com.trs.gb.bean.JsonBean" table="guobo7">
+        <property name="DOCTITLE" column="DOCTITLE" color="true">
+            <extractor type="com.trs.gb.tools.HybaseColorStringExtractor"/>
+        </property>
+        <property name="DOCCONTENT" column="DOCCONTENT" color="true">
+            <extractor type="com.trs.gb.tools.HybaseColorStringExtractor"/>
+        </property>
+        <property name="DOCRELTIME" column="DOCRELTIME"/>
+        <property name="chnls" column="chnls"/>
+        <property name="DOCPUBURL" column="DOCPUBURL"/>
+        <property name="starttime" column="starttime"/>
+        <property name="endtime" column="endtime"/>
+        <property name="time" column="time"/>
+        <property name="zldd" column="zldd"/>
+        <property name="zltt" column="zltt"/>
+        <property name="zlhb" column="zlhb"/>
+        <property name="zljs" column="zljs"/>
+        <property name="zllb" column="zllb"/>
+        <property name="PageNum" column="PageNum"/>
+        <property name="PageSize" column="PageSize"/>
+        <property name="searchword" column="searchword"/>
+        <property name="ztzlurl" column="ztzlurl"/>
+        <property name="hdlb" column="hdlb"/>
+        <property name="zl_sort" column="zl_sort"/>
+    </class>
+    <class id="allBean.All" name="com.trs.gb.bean.AllBean" table="guobo7">
+
+        <property name="ID" column="ID"/>
+        <property name="chnls" column="chnls"/>
+        <property name="classification" column="classification"/>
+        <property name="STATUS" column="STATUS"/>
+        <property name="DOCTITLE" column="DOCTITLE"/>
+        <property name="DOCCONTENT" column="DOCCONTENT"/>
+        <property name="DOCHTMLCON" column="DOCHTMLCON"/>
+        <property name="DOCABSTRACT" column="DOCABSTRACT"/>
+        <property name="SUBDOCTITLE" column="SUBDOCTITLE"/>
+        <property name="DOCLINK" column="DOCLINK"/>
+        <property name="DOCAUTHOR" column="DOCAUTHOR"/>
+        <property name="DOCKEYWORDS" column="DOCKEYWORDS"/>
+        <property name="DOCSOURCENAME" column="DOCSOURCENAME"/>
+        <property name="kmsdd" column="kmsdd"/>
+        <property name="zlzw" column="zlzw"/>
+        <property name="zllb" column="zllb"/>
+        <property name="qtxszlsj" column="qtxszlsj"/>
+        <property name="zltt" column="zltt"/>
+        <property name="zldd" column="zldd"/>
+        <property name="qtxszq" column="qtxszq"/>
+        <property name="v_date" column="v_date"/>
+        <property name="wwms" column="wwms"/>
+        <property name="slt" column="slt"/>
+        <property name="gg" column="gg"/>
+        <property name="zhidi" column="zhidi"/>
+        <property name="pinlei" column="pinlei"/>
+        <property name="nd" column="nd"/>
+        <property name="cpndfl" column="cpndfl"/>
+        <property name="gdcp" column="gdcp"/>
+        <property name="jxdww" column="jxdww"/>
+        <property name="yszp" column="yszp"/>
+        <property name="DOCCHANNEL" column="DOCCHANNEL"/>
+        <property name="DOCKIND" column="DOCKIND"/>
+        <property name="DOCOUTUPID" column="DOCOUTUPID"/>
+        <property name="DOCPUBURL" column="DOCPUBURL"/>
+        <property name="DOCPUBTIME" column="DOCPUBTIME"/>
+        <property name="DOCRELTIME" column="DOCRELTIME"/>
+        <property name="CRTIME" column="CRTIME"/>
+        <property name="CRUSER" column="CRUSER"/>
+        <property name="attachpic" column="attachpic"/>
+        <property name="POSCHNLID" column="POSCHNLID"/>
+        <property name="SITEID" column="SITEID"/>
+        <property name="SRCSITEID" column="SRCSITEID"/>
+        <property name="DOCFLAG" column="DOCFLAG"/>
+        <property name="MODAL" column="MODAL"/>
+        <property name="OPERUSER" column="OPERUSER"/>
+        <property name="INVALIDTIME" column="INVALIDTIME"/>
+        <property name="DOCORDERPRI" column="DOCORDERPRI"/>
+        <property name="CHNLID" column="CHNLID"/>
+        <property name="DOCORDER" column="DOCORDER"/>
+        <property name="DOCSTATUS" column="DOCSTATUS"/>
+        <property name="RECID" column="RECID"/>
+        <property name="OPERTIME" column="OPERTIME"/>
+        <property name="DOCFIRSTPUBTIME" column="DOCFIRSTPUBTIME"/>
+        <property name="CHNLNAME" column="CHNLNAME"/>
+        <property name="starttime" column="starttime"/>
+        <property name="endtime" column="endtime"/>
+        <property name="zlhb" column="zlhb"/>
+        <property name="zljs" column="zljs"/>
+        <property name="zt_name" column="zt_name"/>
+        <property name="zl_name" column="zl_name"/>
+        <property name="zbdw" column="zbdw"/>
+        <property name="cbdw" column="cbdw"/>
+        <property name="zcdw" column="zcdw"/>
+        <property name="zttp" column="zttp"/>
+        <property name="tp" column="tp"/>
+        <property name="mc" column="mc"/>
+        <property name="hd_name" column="hd_name"/>
+        <property name="hd_qtzssj" column="hd_qtzssj"/>
+        <property name="hd_zjr" column="hd_zjr"/>
+        <property name="hd_dd" column="hd_dd"/>
+        <property name="hd_rs" column="hd_rs"/>
+        <property name="hd_link" column="hd_link"/>
+        <property name="hd_fwrq" column="hd_fwrq"/>
+        <property name="hd_starttime" column="hd_starttime"/>
+        <property name="hd_endtime" column="hd_endtime"/>
+        <property name="hd_lb" column="hd_lb"/>
+        <property name="cp_zlID" column="cp_zlID"/>
+        <property name="zl_ztID" column="zl_ztID"/>
+        <property name="tjzl" column="tjzl"/>
+        <property name="zl_sort" column="zl_sort"/>
+        <property name="zllb_name" column="zllb_name"/>
+        <property name="zptp" column="zptp"/>
+        <property name="issue" column="issue"/>
+        <property name="rcontent" column="rcontent"/>
+        <property name="rtime" column="rtime"/>
+        <property name="issue_name" column="issue_name"/>
+        <property name="ctime" column="ctime"/>
+    </class>
+
+    <class id="searchLog.All" name="com.trs.gb.bean.SearchLog" table="guobo_search_log">
+        <property name="ip" column="ip"/>
+        <property name="searchWord" column="searchWord"/>
+        <property name="searchTime" column="searchTime" />
+    </class>
+</trshybase-mapping>
